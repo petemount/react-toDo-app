@@ -1,0 +1,88 @@
+body {
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #042940;
+    color: #FFFFFF
+}
+
+h1 {
+    background-color: #005c53; 
+    color: #F2E963;
+    margin: 0; 
+    padding: 1000; 
+    display: flex; 
+    justify-content: center;
+    border-radius: 5px;
+ }
+
+.input-field {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.add-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005C53;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.to-do-list {
+    background-color: #042940;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;   
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    background-color: #005C53;
+}
+
+.buttons button {
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #005c53;
+    color: #FFFFFF;
+    margin-left: 10px; 
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.footer {
+    background-color: black;
+    color: #F2E963;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    flex: 1;
+}
+
