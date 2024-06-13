@@ -12,15 +12,16 @@ function TodoList() {
         .catch((error) => console.error("Fehler beim API-Aufruf", error));
         }
     
+    // Beschreibung useEffect ergänzen.
     // useEffect()) => {}, []); --> Grundgerüst von useEffekt --> wird min. 1 mal durchlaufen und fängt 
     useEffect(() => {
         fetchAllData();
     }, []);
-
+    // Userinput abfangen.
     function handleInputChange(event) {
         setNewTask(event.target.value);
     }
-
+    // Mit async und await Websitenaufruf Zeit geben und Userinputs an Backend-Server schicken.
     async function addTask() {
         if (newTask !== '') {
           await fetch("http://localhost:3000/tasks", {
@@ -34,7 +35,7 @@ function TodoList() {
           setNewTask("");  // muss rein sonst wird das Eingabefeld nicht gelöscht!
         }
     }
-
+    // Mit async und await Websitenaufruf Zeit geben und Userinputs an Backend-Server schicken.
     async function moveTaskUp(index) {
         if (index > 0) {
             await fetch('http://localhost:3000/tasks/up', {
@@ -48,7 +49,7 @@ function TodoList() {
             
         }
     }
-
+    // Mit async und await Websitenaufruf Zeit geben und Userinputs an Backend-Server schicken.
     async function moveTaskDown(index) {
         if (index < tasks.length -1) {
             await fetch('http://localhost:3000/tasks/down', {
@@ -61,7 +62,7 @@ function TodoList() {
             fetchAllData();
         }
     }
-
+    // Mit async und await Websitenaufruf Zeit geben und Userinputs an Backend-Server schicken.
     async function deleteTask(index) {
     await fetch(`http://localhost:3000/tasks/${index}`, {
         method:"DELETE"
@@ -69,9 +70,8 @@ function TodoList() {
         fetchAllData();
     // const updatedTasks = tasks.filter((task, i) => i !== index);
     // const updatedTasks = tasks.filter((_,i) => i !== index); // das Gleiche, wie oben in kurzer Schreibweise.
-    
     }
-
+    // Seite mit allen HTML-Komponenten aufbauen.
     return (
         <div className="to-do-list">
             <div>

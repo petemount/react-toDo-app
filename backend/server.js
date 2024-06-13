@@ -104,7 +104,7 @@ app.delete("/tasks/:index", (req,res) => {
 });
 
 
-
+// Port auf API-Anfragen überwachen.
 app.listen(PORT, () => {
     console.log(`Der Server wurde gestartet. Port: ${PORT}`)
 });
