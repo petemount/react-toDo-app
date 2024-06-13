@@ -13,7 +13,7 @@ function TodoList() {
         }
     
     // Der useEffect kümmert sich hier um das 1. fetchen der Daten. 
-    // useEffect()) => {}, []); --> Grundgerüst von useEffekt --> wird min. 1 mal durchlaufen und fängt 
+    // useEffect(() => {}, []); --> Grundgerüst von useEffekt --> wird min. 1 mal durchlaufen und fängt 
     // ext. Interaktionen, also Nebeneffekte ab. Siehe auch https://kinsta.com/de/wissensdatenbank/react-useeffect/, wobei 
     // unter Punkt 4. Vergessen aufzuräumen die Codes für mich absolut gleich aussehen! Suheib mal fragen!
     useEffect(() => {
